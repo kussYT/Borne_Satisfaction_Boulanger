@@ -1,0 +1,14 @@
+.notation {
+    font-size: 0; /* Empêche les espaces entre les étoiles */
+    position: relative;
+    top: 27%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+ }
+.etoile {
+    font-size: 300px; /* Taille des étoiles */
+    color: white; /* Couleur par défaut */
+    cursor: pointer; /* Curseur de la souris */
+}
