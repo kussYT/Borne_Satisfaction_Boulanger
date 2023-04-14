@@ -1,6 +1,6 @@
 .\#4623{
     color: #ffffff;
-    background: #F15921;
+    background: #6C9368;
     padding: 6px 5px;
     border-radius: 3px;
 }
@@ -30,14 +30,14 @@
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    background: #F15921;
+    background: #00345f;
     color: white;
     cursor: pointer;
     font-size: 6em;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    box-shadow: 0 20px #ffffff;
+    box-shadow: 0 20px grey;
     /*border: white solid 2px;*/
 }
 
@@ -53,7 +53,7 @@
 
 .Bouton_bienvenue:active {
     transform: translateY(15px);
-    box-shadow: 0 5px #ffffff;
+    box-shadow: 0 5px grey;
 }
 
 .moyenne {
@@ -74,7 +74,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: black;
+    color: #6C9368;
     padding-right: 10px;
     padding-top: 4px;
 }

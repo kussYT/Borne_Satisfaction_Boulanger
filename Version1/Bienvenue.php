@@ -33,8 +33,13 @@
 
 </body>
 
-<?php
-require(
+<div class="moyenne">
+    <h2>Notre moyenne :   </h2>
+        <?php
+    require("Moyenne.php")
+    ?>
+</div>
+
 
 </html>
 <script src="./JavaScript/Message.js"></script>

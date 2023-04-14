@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./StyleSheets/Bienvenue.css">
 </head>
 <header>
-    <img class="Logo_Boulanger" src="Images/Boulanger_Long.png" alt="images">
+    <img class="Logo_Boulanger" src="Images/1643879359590.jfif" alt="images">
 </header>
 <body>
 <!--Fichier de départ qui propose de laisser son avis sur le service donné par le comptoir-->
@@ -33,8 +33,13 @@
 
 </body>
 
-<?php
-require(
+<div class="moyenne">
+    <h2>Notre moyenne :   </h2>
+        <?php
+    require("Moyenne.php")
+    ?>
+</div>
+
 
 </html>
 <script src="./JavaScript/Message.js"></script>
