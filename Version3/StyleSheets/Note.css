@@ -10,7 +10,7 @@
 
 .etoile {
     font-size: 300px; /* Taille des étoiles */
-    color: grey; /* Couleur par défaut */
+    color: #6C9368; /* Couleur par défaut */
     cursor: pointer; /* Curseur de la souris */
 }
 
@@ -79,7 +79,7 @@
 
 .texte {
     position: absolute;
-    top: 60%;
+    top: 58%;
     left: 30%;
     right: 30%;
     width: 40%;
@@ -89,4 +89,16 @@
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+}
+
+.input_matricule {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    height: 90%;
+    border: solid 2px #00345f;
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: center;
 }

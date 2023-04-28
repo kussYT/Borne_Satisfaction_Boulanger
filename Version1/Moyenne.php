@@ -1,6 +1,6 @@
 <?php
 // Ouvrir le fichier en mode lecture
-$fichier = fopen("//sam/sam$/Deploiement_Install/Borne_Comptoire/note.txt", "r");
+$fichier = fopen("../notes.txt", "r");
 
 // Initialiser la somme et le compteur
 $somme = 0;
@@ -51,3 +51,4 @@ if ($fichier) {
     #value {height:40px; width:<?php echo $moyenneArrondi ?>px; background:yellow;}
     #glob {display: flex;}
 </style>
+

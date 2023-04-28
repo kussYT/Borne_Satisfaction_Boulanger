@@ -1,0 +1,81 @@
+.\#4623{
+    color: #ffffff;
+    background: #F15921;
+    padding: 6px 5px;
+    border-radius: 3px;
+}
+
+.screen_accueil{
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    width: 60%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.Bouton_bienvenue{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #F15921;
+    color: white;
+    cursor: pointer;
+    font-size: 4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 20px #ffffff;
+    /*border: white solid 2px;*/
+}
+
+
+.a\=texte_bouton_bienvenue {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Bouton_bienvenue:active {
+    transform: translateY(15px);
+    box-shadow: 0 5px #ffffff;
+}
+
+.moyenne {
+    position: absolute;
+    top: 80%;
+    left: 27%;
+    right: 30%;
+    width: 40%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.moyenne h2 {
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    padding-right: 10px;
+    padding-top: 4px;
+}

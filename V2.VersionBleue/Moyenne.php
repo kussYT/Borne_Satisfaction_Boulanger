@@ -1,6 +1,6 @@
 <?php
 // Ouvrir le fichier en mode lecture
-$fichier = fopen("../notes.txt", "r");
+$fichier = fopen("note.txt", "r");
 
 // Initialiser la somme et le compteur
 $somme = 0;
@@ -10,7 +10,7 @@ $compteur = 0;
 if ($fichier) {
     while (($ligne = fgets($fichier)) !== false) {
         // Extraire la première valeur de la ligne
-        $valeur = array_shift(explode(",", $ligne)[0]);
+        $valeur = explode(",", $ligne)[0];
 
         // Ajouter la valeur à la somme et incrémenter le compteur
         $somme += intval($valeur);
@@ -21,7 +21,6 @@ if ($fichier) {
     fclose($fichier);
 
     // Calculer la moyenne
-
     if ($compteur > 0) {
         $moyenne = $somme / $compteur;
         $moyenneArrondi = $moyenne * 40;
@@ -31,7 +30,6 @@ if ($fichier) {
         $moyenne = 0;
         $moyenneArrondi = 0;
     }
-
 //    // Afficher la moyenne
 //    echo "La moyenne est de : " . $moyenne;
 //    echo "La moyenne arrondi est de : " . $moyenneArrondi;
@@ -56,6 +54,7 @@ if ($fichier) {
 
 <style>
     .tde {height:40px;width:40px;}
-    #value {height:40px; width:<?php echo $moyenneArrondi ?>px; background: orange;}
+    #value {height:40px; width:<?php echo $moyenneArrondi ?>px; background:yellow;}
     #glob {display: flex;}
 </style>
+

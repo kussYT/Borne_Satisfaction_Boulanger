@@ -7,17 +7,10 @@
     <link rel="stylesheet" href="./StyleSheets/Note.css">
 </head>
 <header>
-    <img class="Logo_Boulanger" src="Images/1643879359590.jfif" alt="images">
+    <img class="Logo_Boulanger" src="Images/Boulanger_Long.png" alt="images">
 </header>
 
 <body>
-
-<div class="moyenne">
-    <h2>Notre moyenne :   </h2>
-    <?php
-    require("Moyenne.php")
-    ?>
-</div>
 
 <div class="notation">
     <input type="hidden" name="note" id="note" value="">
@@ -28,9 +21,9 @@
     <span class="etoile" data-value="5">&#9733;</span>
 </div>
 
-<!--Faire une texte area ou on pourra écrire du texte-->
-
-
+<div class="texte">
+    <input class="texte_matricule" id="matricule" name="texte" placeholder="Matricule (3 étoiles ou moins)">
+</div>
 
 <div class="boutonSubmit">
     <a class="a=texteboutonSubmit" href="soumettre-note.php">
@@ -57,7 +50,7 @@
             if (i < note) {
                 etoiles[i].style.color = "orange";
             } else {
-                etoiles[i].style.color = "#6C9368";
+                etoiles[i].style.color = "white";
             }
         }
     }
@@ -66,8 +59,8 @@
 
     boutonSoumettre.addEventListener('click', () => {
         const note = document.getElementById("note").value;
-        const matricule = document.getElementById("texte").value;
         const date = new Date().toLocaleString();
+        const matricule = document.getElementById("matricule").value;
 
         // Envoi de la note et de la date via une requête HTTP POST
         const xhr = new XMLHttpRequest();

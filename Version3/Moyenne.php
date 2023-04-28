@@ -1,6 +1,6 @@
 <?php
 // Ouvrir le fichier en mode lecture
-$fichier = fopen("//sam/sam$/Deploiement_Install/Borne_Comptoire/note.txt", "r");
+$fichier = fopen("../notes.txt", "r");
 
 // Initialiser la somme et le compteur
 $somme = 0;
